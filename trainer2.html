@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2nd Trainers page</title>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+*{
+  padding: 0;
+  margin :0 ;
+  box-sizing :border-box ;
+}
+html,
+body{
+  width :700px
+  font-family: 'Lato', sans-serif ;
+}
+
+header.header{
+  display :flex ;
+  flex-direction:row ; 
+  justify-content :space-between ;
+  background :#1e73eb;
+  color:#fff;
+  height: 45px ;
+  padding:0 35px ;
+  
+}
+p.header-left_byb{
+  font-size :1.5rem;
+  height :60%;
+  display :inline-block ;
+  margin-top :5px;
+  font-weight:bold;
+  border-right :1.40597px solid #fff;
+  padding-right:10px ;
+  margin-right:10px;
+}
+p.header-left_with{
+  display :inline ;
+  font-weight :normal ;
+  font-size :20px;
+}
+div.header-right{
+  display :inline ;
+}
+div.gear{
+  height:100%;
+  background :#78abf1;
+  padding: 2px ;
+  display :inline-block ;
+  margin-right: 3px ;
+}
+
+
+.dashboard.dashboard{
+  display :grid;
+  grid-template-columns :1fr 5fr;
+  justify-content: center;
+  background :#e5e5e5;
+  padding-top :80px;
+  padding-bottom: 60px ;
+}
+section.trainers{
+  padding:0rem 30px  0 110px;
+}
+section.trainers p{
+  font-size :20px ;
+  padding-top :10px;
+  padding-left: 9px ;
+}
+p.trainers1, 
+p.trainers2{
+  width :250px;
+  height:60px ;
+}
+p.trainers1{
+  color: #fff;
+  background :#1e73eb;
+}
+p.trainers2{
+  color :#000;
+  border-top :1px solid #444 ;
+}
+
+
+section.schedule{
+  margin-right: 120px ;
+}
+p.schedule-header{
+  font-size :28px;
+  font-weight :bold;
+  margin-bottom: 20px ;
+  padding-left: 20px ;
+}
+
+article.schedule-form{
+  background: #fff ;
+  padding: 20px ;
+  margin-bottom :20px ;
+  border-radius :3px ;
+}
+p.schedule-instruction{
+  font-size :18px ;
+  word-spacing: 0.5px;
+  line-height :28px;
+  color :#4c4c4c;
+  text-align :center ;
+  margin-bottom :15px ;
+}
+input#name,
+select,
+input#time{
+  background :#f2f2f2;
+  border-radius :5.6249px;
+  outline :none ;
+  border :0;
+  padding-left: 20px ;
+  margin-bottom :2rem ;
+  margin-right: 1rem ;
+}
+input#name,
+select{
+  width :294.54px;
+  height: 69.82px;
+}
+input#time{
+  width :616px;
+  height :70px;
+}
+input::placeholder,
+select,
+input#time{
+  color:#4c4c4c;
+  opacity :0.6;
+  letter-spacing: 1px;
+  font-size :16px ;
+  line-height :21px;
+}
+a.schedule-submit{
+  text-decoration :none ;
+  color :#fff;
+  display :block ;
+  height: 50px;
+  width :616px;
+  background :#1e73eb;
+  font-weight :bold ;
+  font-size :24px ;
+  border-radius :3px ;
+  text-align :center ;
+  padding-top: 9px;
+  margin-left: 120px;
+}
+
+footer.footer{
+  background: #1e73eb;
+  display :flex ;
+  flex-direction :row ;
+  justify-content: space-around ;
+  align-items: center ;
+  height: 50px ;
+}
+p.footer-left{
+  font-size :16px;
+  color :#fff ;
+  word-spacing: 0.5px;
+  line-height :25px;
+  padding-right: -20px;
+}
+</style>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <p class="header-left_byb">BYB</p>
+      <p class="header-left_with">with Facebook</p>
+    </div>
+    <div class="header-right">
+      <div class="gear">
+        <img src="images/gear.png" alt="gear settings " />
+        <img src="images/triangle-d.png" alt="arrow down " />
+      </div>
+      <img src="images/round.svg" alt="head shot" style="background :inherit"/>
+    </div>
+  </header>
+  
+  <main class="dashboard">
+    <section class="trainers">
+      <p class="trainers1">Trainers dashboard</p>
+      <p class="trainers2">Book session</p>
+      <p class="trainers2">All session</p>
+      <p class="trainers2">Check session status</p>
+      <p class="trainers2">Send report </p>
+      <p class="trainers2">All reports</p>
+      <p class="trainers2">Download resources </p>
+      <p class="trainers2">My payments </p>
+      <p class="trainers2">Account settings </p>
+      <p class="trainers2">Join our community</p>
+    </section>
+    
+    <section class="schedule">
+      <p class="schedule-header">Schedule a training session</p>
+      <article class="schedule-form">
+        <p class="schedule-instruction">Please note that you are to fill the form, a minimum of 7 days before your proposed date</p>
+        <form action="#" class="form">
+          <input type="text" name="name" id="name" placeholder="Josh" />
+          <input type="text" name="name" id="name" placeholder="Onwughalu" />
+          <input type="email" name="name" id="name" placeholder="Kreativejosh@gmail.com" />
+          <input type="text" name="name" id="name" placeholder="Name of Organisation" />
+          <input type="text" name="name" id="name" placeholder="Expected Nos of participants" />
+          <input type="text" name="name" id="name" placeholder="Training venue" />
+          <select name="name" id="name">
+            <option value="Proposed LGA">Proposed LGA</option>
+          </select>
+          <input type="text" name="name" id="name" placeholder="Proposed training date " />
+          <input type="text" name="name" id="time" placeholder="Proposed time" />
+          <a href="#" class="schedule-submit">Save and Continue </a>
+        </form>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer-left">Copyright © 2018 fbportal. All rights reserved.</p>
+    <p class="footer-left">made with at Innovation growth hub Aba</p>
+  </footer>
+</body>
+</html>

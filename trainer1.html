@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Trainers page</title>
+</head>
+<style>
+    
+header.header{
+  display :flex ;
+  flex-direction:row ; 
+  justify-content :space-between;
+  background :#1e73eb;;
+  color:#fff;
+  height: 45px ;
+  padding: 0 35px ;
+  
+}
+p.header-left_byb{
+  font-size :1.5rem;
+  height :60%;
+  display :inline-block ;
+  margin-top :5px;
+  font-weight:bold;
+  border-right :1.40597px solid #fff;
+  padding-right:10px ;
+  margin-right:10px;
+}
+p.header-left_with{
+  display :inline ;
+  font-weight :normal ;
+  font-size :20px;
+}
+div.header-right{
+  display :inline ;
+}
+div.gear{
+  height:100%;
+  background :#78abf1;
+  padding: 2px ;
+  display :inline-block ;
+  margin-right: 3px ;
+}
+.trainerspage{
+  display :grid;
+  grid-template-columns :1fr 5fr;
+  justify-content: center;
+  background :#e5e5e5;
+  padding-top :80px;
+  padding-bottom: 60px ;
+}
+section.dashboard{
+  padding:0rem 30px  0 110px;
+  
+}
+section.dashboard p{
+  font-size :20px ;
+  padding-top :10px;
+  padding-left: 9px ;
+}
+p.trainers1, 
+p.trainers2{
+  width :250px;
+  height:60px ;
+}
+p.trainers1{
+  color: #fff;
+  background :#1e73eb;
+}
+p.trainers2{
+  color :#000;
+  border-top :1px solid #444 ;
+  height: 20px;
+}
+
+.welcome{
+    margin-right: 120px ;
+    margin-left: 10px;
+}
+.welcome-header{
+  font-size :28px;
+  font-weight :bold;
+  margin-bottom: 30px ;
+  padding-left: 20px ;
+}
+.welcome-instruction{
+    padding-left: 20px ;
+    margin-bottom: 30px ;
+    font-size :20px;
+}
+.instrutions{
+    background-color: rgb(248, 252, 252);
+    padding-left: 30px ;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-bottom: 20px ;
+    margin-top: 10px;
+    margin-left: 25px;
+    word-spacing: 2px;
+    line-height: 30px;
+    width: 650px;
+    
+   
+}
+.submit{
+  background-color: #1e73eb;
+  color: white;
+  display :block ;
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  margin-left: 150px;
+  font-weight: bold ;
+  font-size :20px ;
+  border-radius :3px ;
+
+}
+.statistics{
+  display: inline-flex;
+}
+.A, .B, .C{
+  background-color: azure;
+  padding: 10px 30px;
+  width: 50px ;
+  margin: 40px;
+  font-size: large;
+  text-align: center;
+  height: 90px;
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="header-left">
+          <p class="header-left_byb">BYB</p>
+          <p class="header-left_with">with Facebook</p>
+        </div>
+        <div class="header-right">
+          <div class="gear">
+            <img src="images/gear.png" alt="gear settings " />
+            <img src="images/triangle-d.png" alt="arrow down " />
+          </div>
+          <img src="images/round.svg" alt="head shot" style="background :inherit"/>
+        </div>
+      </header>
+      <main class="trainerspage">
+        <section class="dashboard">
+          <p class="trainers1">Trainers dashboard</p>
+          <p class="trainers2">Book session</p>
+          <p class="trainers2">All session</p>
+          <p class="trainers2">Check session status</p>
+          <p class="trainers2">Send report </p>
+          <p class="trainers2">All reports</p>
+          <p class="trainers2">Download resources </p>
+          <p class="trainers2">My payments </p>
+          <p class="trainers2">Account settings </p>
+          <p class="trainers2">Join our community</p>
+        </section>
+    
+        <section class="welcome">
+            <p class="welcome-header">Welcome to Trainer's Name</p>
+            <article class="instruction">
+              </article>
+              <p class="welcome-instruction">Carefully read before you proceed.</p>
+            <div class="instrutions">
+              <ol>
+                  <li>Update your profile and bank details before you proceed.</li>
+                  <li>Carefully click thw information you enter while booking a ssesion.</li>
+                  <li>You can only book a session at least 7 days before  the proposed date.</li>
+                  <li>Remember to log in and check fo r the session approval before due date.</li>
+                  <li>Reports are made within 24hrs of training.</li>
+              </ol>
+              <button class="submit" type="submit">Edit profile and continue</button>
+            </div>
+            <div class="statistics">
+                   <div class="A">782<br>Total training booked</div>
+                   <div class="B">426<br>Total trainees approved</div>
+                   <div class="C"> N726,062<br>Total earnings</div>
+            </div>
+</body>
+</html>
